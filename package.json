@@ -1,9 +1,9 @@
 {
-  "name": "hello-near",
+  "name": "hello_near",
   "version": "1.0.0",
   "license": "UNLICENSED",
   "scripts": {
-    "build": "cd contract && npm run build && mkdir -p ../out && rm -f ./out/hello-near.wasm && cp ./build/release/hello-near.wasm ../out/hello-near.wasm",
+    "build": "cd contract && npm run build && mkdir -p ../out && rm -f ./out/hello_near.wasm && cp ./build/release/hello_near.wasm ../out/hello_near.wasm",
     "deploy": "npm run build && near dev-deploy",
     "start": "npm run deploy && echo The app is starting! && env-cmd -f ./neardev/dev-account.env parcel frontend/index.html --open",
     "dev": "nodemon --watch contract -e ts --exec \"npm run start\"",
