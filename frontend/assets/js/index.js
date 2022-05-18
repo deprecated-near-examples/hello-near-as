@@ -54,6 +54,7 @@ function flow(){
   }else{
     signedOutFlow()
   }
+  fetchGreeting()
 }
 
 // Display the signed-out-flow container
@@ -68,6 +69,4 @@ function signedInFlow() {
   document.querySelectorAll('[data-behavior=account-id]').forEach(el => {
     el.innerText = window.accountId
   })
-
-  fetchGreeting()
 }
